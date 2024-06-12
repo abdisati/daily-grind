@@ -40,7 +40,7 @@ switch (myDay) {
       name: " Cold Brew",
       pic: "images/cold-brew.jpg",
       alt: "this is a picture of some cold brew",
-      color: "yellow",
+      color: "rgb(44, 26, 19)",
       day: "Sunday",
       desc: `I like me some Cold Brew!`,
     };
@@ -52,7 +52,7 @@ switch (myDay) {
       name: " Mocha",
       pic: "images/mocha.jpg",
       alt: "a picture of a cup of mocha coffee",
-      color: "brown",
+      color: "rgb(107, 68, 35)",
       day: "Monday",
       desc: "Mocha drive me coca!",
     };
@@ -63,8 +63,8 @@ switch (myDay) {
     coffee = {
       name: " Bubble Tea",
       pic: "images/bubble-tea.jpg",
-      alt: "a picture of a trouble tea",
-      color: "pink",
+      alt: "a picture of a bubble tea",
+      color: "rgb(204, 153, 102)",
       day: "Tuesday",
       desc: "I like Bubble Tea!",
     };
@@ -72,48 +72,48 @@ switch (myDay) {
   case 3:
     today = "Wednesday";
     coffee = {
-      name: " Bubble Tea",
-      pic: "images/bubble-tea.jpg",
-      alt: "a picture of a trouble tea",
-      color: "pink",
+      name: " Frappaccino",
+      pic: "images/frappaccino.jpg",
+      alt: "a picture of a frappaccino",
+      color: "rgb(192, 150, 128)",
       day: "Wednesday",
-      desc: "I like Bubble Tea!",
+      desc: "I like Frappaccino",
     };
     break;
 
   case 4:
     today = "Thrusday";
     coffee = {
-      name: " Bubble Tea",
-      pic: "images/bubble-tea.jpg",
-      alt: "a picture of a trouble tea",
-      color: "pink",
+      name: " Caramel Latte!",
+      pic: "caramel-latte.jpg",
+      alt: "a picture of a caramel latte",
+      color: "rgb(193, 101, 57)",
       day: "Thrusday",
-      desc: "I like Bubble Tea!",
+      desc: "I like Caramel Latte!",
     };
     break;
 
   case 5:
     today = "Friday";
     coffee = {
-      name: " Bubble Tea",
-      pic: "images/bubble-tea.jpg",
-      alt: "a picture of a trouble tea",
-      color: "pink",
+      name: " Pumpkin Spice Latte",
+      pic: "images/pumpkin-spice-latte.jpg",
+      alt: "a picture of pumpkin-spice-latte",
+      color: "rgb(204, 119, 34)",
       day: "Friday",
-      desc: "I like Bubble Tea!",
+      desc: "I like Pumpkin Spice Latte!",
     };
     break;
 
   case 6:
     today = "Saturday";
     coffee = {
-      name: " Bubble Tea",
-      pic: "images/bubble-tea.jpg",
-      alt: "a picture of a trouble tea",
-      color: "pink",
+      name: " Drip",
+      pic: "images/drip.jpg",
+      alt: "a picture of a Drip",
+      color: "rgba(67, 33, 13, 0.8)",
       day: "Saturday",
-      desc: "I like Bubble Tea!",
+      desc: "I like Drip!",
     };
     break;
 
