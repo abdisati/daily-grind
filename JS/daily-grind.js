@@ -12,6 +12,11 @@ The unique color could affect the background HTML, or an element on the page for
 //color - the color associated with the coffee
 //day - the day of the week for the coffee
 //name - the name of the coffee
+
+//Here is code to help us use the query string with JS:
+
+//use location object to access querystring (address bar)
+
 function coffeeTemplate(coffee) {
   return ` 
 <p>
@@ -31,7 +36,6 @@ function coffeeTemplate(coffee) {
 let myDate = new Date();
 let myDay = myDate.getDay();
 let coffee;
-//console.log(myDay);
 
 switch (myDay) {
   case 0:
@@ -77,7 +81,7 @@ switch (myDay) {
       alt: "a picture of a frappaccino",
       color: "rgb(192, 150, 128)",
       day: "Wednesday",
-      desc: "I like Frappaccino",
+      desc: `A Frappuccino is a delightful and indulgent blended coffee beverage crafted with creamy milk, rich espresso, and ice, all blended together to a smooth perfection. Topped with whipped cream and drizzled with a syrup of your choice, it offers a refreshing and decadent treat perfect for any time of day, whether you're seeking a pick-me-up or simply craving a deliciously cold coffee experience.`,
     };
     break;
 
@@ -124,3 +128,26 @@ switch (myDay) {
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 
 document.querySelector("html").style.backgroundColor = coffee.color;
+
+//use location object to access querystring (address bar)
+const queryString = window.location.search;
+
+//output to console
+console.log(queryString);
+
+//separate query string parameters
+const urlParams = new URLSearchParams(queryString);
+
+if (urlParams.has("day")) {
+  //from querystring
+  myDay = urlParams.get("day");
+} else {
+  //today's day of week
+  myDay = today;
+}
+
+if (urlParams.has("day")) {
+  //from querystring
+  myDay = urlParams.get("day");
+}
+myDay = urlParams.get("day");
