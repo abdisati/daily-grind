@@ -144,4 +144,4 @@ switch (myDay) {
 //This places our coffee object on the page.
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 
-document.querySelector("body").style.backgroundColor = coffee.color;
+document.querySelector("html").style.backgroundColor = coffee.color;
